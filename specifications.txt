@@ -1,0 +1,28 @@
+10 html tags are:
+script
+header
+div
+a (anchor)
+splineviewer
+button
+nav
+ul
+li
+section
+
+5 css selectors:
+html
+.hero-t
+.navbar-brand span
+#navbarList
+.navlink::hover
+
+5 css properties:
+background-color
+backdrop-filter
+box-shadow
+scroll-snap-align
+opacity
+
+I used bootstrap's grid system to make my website responsive and added the
+tiniest bit of javascript to add scroll animation with IntersectionObserver.

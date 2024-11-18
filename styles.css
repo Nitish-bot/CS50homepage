@@ -1,0 +1,352 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    /* scroll-padding-top: 86px; */
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 25px rgba(25, 25, 25, 0.2);
+}
+
+.navbar-brand span{
+    font-family: "Imbue";
+    font-weight: 700;
+    /* font-size: 2.5rem; */
+}
+
+#navbarList{
+    text-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+}
+
+.nav-link::hover{
+    color: white;
+}
+
+spline-viewer {
+    scroll-snap-align: start;
+    height: 101vh;
+    width: 100vw;
+}
+
+#hero {
+    scroll-snap-align: start;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+    height: 100vh;
+}
+
+.hero-t {
+    font-family: "Montserrat";
+    font-weight: 600;
+    /* font-size: 3rem; */
+}
+
+#buy {
+    font-weight: 800;
+}
+#think {
+    font-style: italic;
+}
+
+#why-container {
+    background: radial-gradient(circle farthest-corner at 80% 66%, rgba(56,1,13,1) 0%, rgba(127,9,70,1) 34%, rgba(186,24,133,1) 100%);
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
+
+#why-container > h2 {
+    padding-top: 5rem;
+    font-size: clamp(48px, 7rem, 120px);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.card {
+    /* position: fixed; */
+    filter: drop-shadow(16px 16px);
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#home-foot {
+    height: 50vh;
+    background: rgb(173,21,119);
+    background: linear-gradient(90deg, rgba(173,21,119,1) 0%, #770840 70%, #800947 100%);
+}
+
+#home-foot h1 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+
+
+/* ---- Effects ---- */
+
+.hidden-h {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(250%);
+    transition: all 1s;
+}
+
+.show-h {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hidden-w {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(100vw);
+    transition: all 1.25s;
+}
+
+.show-w {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+.card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+/*---- PRICING ----*/
+#pricing-bg {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+}
+
+#pricing-hero {
+    background:         linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+      );
+    /* height: 100vh; */
+}
+
+#payup-bg {
+    z-index: -1;
+}
+
+#payup-bg h1{
+    /* z-index: 2; */
+    position: absolute;
+    top: 5rem;
+    /* padding-top: 10rem; */
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+#payup-bg > :nth-child(1) {
+    top: 10rem;
+}
+#payup-bg > :nth-child(2) {
+    top: 22.5rem;
+}
+#payup-bg > :nth-child(3) {
+    top: 35rem;
+}
+
+@media screen and (max-width: 608px) {
+    #payup-bg > :nth-child(1) {
+        top: 12rem !important;
+    }
+    #payup-bg > :nth-child(2) {
+        top: 40rem !important;
+    }
+    #payup-bg > :nth-child(3) {
+        top: 66rem !important;
+    }
+}
+
+@media screen and (min-width: 608px) and (max-width: 991px) {
+    #payup-bg > :nth-child(1) {
+        top: 35% !important;
+    }
+    #payup-bg > :nth-child(2) {
+        top: 100% !important;
+    }
+    #payup-bg > :nth-child(3) {
+        top: 155% !important;
+    }
+}
+
+#cardsContainer{
+    padding: 10rem 0;
+}
+
+.glass {
+    filter: none !important;
+    /* height: 30vh; */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 32px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass > p {
+    text-shadow:1px 1px 15px rgba(255, 255, 255, 0.3), 1px 1px 10px rgba(196, 196, 196, 0.5);
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.glass ul{
+    padding: 0 1rem;
+    list-style-type: none;
+    text-shadow:1px 1px 15px rgba(0, 0, 0, 0.2), 1px 1px 10px rgba(55, 55, 55, 0.3);
+    font-weight: 300;
+    font-family: "Montserrat";
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05)); */
+}
+
+.glass ul li{
+    margin: 10px 0;
+}
+
+.additional{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#pulp {
+    /* Instead of infinite scroll try scrolling the text along the x axis as the user scrolls with mouse */
+    /* overflow: hidden; */
+}
+
+#pricing-foot {
+
+}
+
+.scroll, .scroll-s {
+    width: 100%;
+    /* overflow: hidden; */
+    /* animation: RightToLeft 12.5s infinite linear; */
+}
+
+.scroll p, .scroll-s p {
+    /* position: absolute; */
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    line-height: 1.5rem;
+    animation: RightToLeft 40s linear infinite;
+}
+
+.scroll-s, .scroll{
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*---- ABOUT ----*/
+
+.custom-shape-divider-bottom-1727382136 {
+    position: absolute;
+    bottom: 0.25%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727382136 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1727382136 .shape-fill {
+    fill: #f1f1f1;
+}
+
+#about-body{
+    /* height: 100vh; */
+}
+
+#about-title {
+    height: 99.75vh;
+}
+
+#about-cards {
+    background: #f1f1f1;
+}
+
+
+
+
+/* CONTACT */
+
+#contact-body{
+    background: url(./assets/contactBackg.png) no-repeat center center fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+#form-container{
+    color: white;
+    width: clamp(100px, 50vw, 600px);
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 44px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.form-control{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control:focus{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#contact-foot {
+    background-color: black;
+}
